@@ -1,0 +1,25 @@
+Example 1: Login Automation
+python
+async def run(browser, vision):
+    await browser.open("https://example.com/login")
+    screenshot = await browser.screenshot()
+    
+    username = vision.locate_element(screenshot, "Username field")
+    password = vision.locate_element(screenshot, "Password field")
+    login_btn = vision.locate_element(screenshot, "Login button")
+    
+    await browser.type_text(username, "myuser")
+    await browser.type_text(password, "mypass")
+    await browser.click(login_btn)
+
+
+
+
+Example 2: Scrape Products
+python
+async def run(browser, vision):
+    await browser.open("https://example.com/products")
+    screenshot = await browser.screenshot()
+    
+    products = vision.extract(screenshot, "All product prices")
+    print(f"Found: {products}")
