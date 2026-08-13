@@ -1,0 +1,8 @@
+Create a file in examples/:
+
+# examples/my_script.py
+async def run(browser, vision):
+    await browser.open("https://example.com")
+    screenshot = await browser.screenshot()
+    button = vision.locate_element(screenshot, "Login button")
+    await browser.click(button)
