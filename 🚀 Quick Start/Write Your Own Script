@@ -6,3 +6,7 @@ async def run(browser, vision):
     screenshot = await browser.screenshot()
     button = vision.locate_element(screenshot, "Login button")
     await browser.click(button)
+
+
+Then run it from the CLI (option 6).
+
