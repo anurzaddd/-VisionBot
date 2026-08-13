@@ -1,0 +1,35 @@
+Playwright - Browser automation
+
+OpenAI - GPT-4V for visual understanding
+
+Rich - Beautiful terminal UI
+
+text
+
+---
+
+## 🚀 مراحل انتشار در گیت‌هاب
+
+### مرحله ۱: ساخت مخزن
+1. برو به GitHub و روی **New** کلیک کن
+2. نام: `VisionBot`
+3. توضیحات: `Vision-Based Web Automation Bot - See and interact with websites like a human`
+4. عمومی (Public) باشه
+5. گزینه‌ی "Add README" رو علامت بزن
+
+### مرحله ۲: آپلود فایل‌ها
+1. روی **Add file** → **Upload files** کلیک کن
+2. همه فایل‌ها رو با هم بکش و رها کن (Drag & Drop)
+3. یه پیام بنویس: `Initial release: VisionBot v2.0`
+4. روی **Commit changes** کلیک کن
+
+### مرحله ۳: اضافه کردن `.gitignore`
+```bash
+# Create file .gitignore with this content:
+__pycache__/
+*.pyc
+.env
+venv/
+node_modules/
+*.log
+.DS_Store
